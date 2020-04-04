@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "792735321645",
+    "firebase_url": "https://locationsupporttouristteam.firebaseio.com",
+    "project_id": "locationsupporttouristteam",
+    "storage_bucket": "locationsupporttouristteam.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:792735321645:android:1784ffd6ef80b29f",
+        "android_client_info": {
+          "package_name": "com.svmc.android.locationsupportteam"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "792735321645-oqvi9vf6dr2ot66artdvi0648rcqhs8g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.svmc.android.locationsupportteam",
+            "certificate_hash": "d155a64eaa4064995f78f83920e94bb133eabf8a"
+          }
+        },
+        {
+          "client_id": "792735321645-qnjgfa4b38ddo1aumrgde1j75p615809.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD24lKdtNi-O5a96BkKC9Yc3DDFSQdScjo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "792735321645-qnjgfa4b38ddo1aumrgde1j75p615809.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

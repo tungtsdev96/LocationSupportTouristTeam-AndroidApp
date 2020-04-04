@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar_add_place"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite">
+
+        <include layout="@layout/toolbar_create_trip"/>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tab_add_recommend_place"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabMode="scrollable"
+            app:tabIndicatorColor="@color/green_700"
+            app:tabTextColor="@color/colorBlack"
+            app:tabSelectedTextColor="@color/green_700"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/view_pager_add_recommend_place"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/rlt_show_on_map"
+            android:background="@drawable/bg_btn_green_dark"
+            android:clickable="true"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/size_16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_map_white"
+                android:layout_toLeftOf="@+id/tv_show_on_map"/>
+
+            <TextView
+                android:id="@+id/tv_show_on_map"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/size_16"
+                android:textColor="@color/colorWhite"
+                android:text="@string/trip_show_on_map"
+                android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

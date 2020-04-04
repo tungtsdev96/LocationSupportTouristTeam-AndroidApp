@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <include layout="@layout/toolbar_common"/>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:id="@+id/swipe_refresh_detail_trip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/rlt_infor_user_created"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorDivider">
+
+                <ImageView
+                    android:id="@+id/img_profile"
+                    android:layout_width="@dimen/size_avatar_big"
+                    android:layout_height="@dimen/size_avatar_big"
+                    android:padding="@dimen/size_8"
+                    android:src="@drawable/ava_demo"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/size_4"
+                    android:layout_toRightOf="@id/img_profile"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/create_by"/>
+
+                    <TextView
+                        android:id="@+id/tv_display_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_size_medium"
+                        android:textColor="@color/colorBlack"
+                        android:text="Son Tung"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlt_point"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/size_8"
+                android:layout_below="@+id/rlt_infor_user_created">
+
+                <TextView
+                    android:id="@+id/tv_long_trip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:padding="@dimen/size_4"
+                    android:text="3 Ngày"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_point"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_below="@+id/tv_long_trip">
+
+                    <TextView
+                        android:id="@+id/tv_start_point"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="Ha Noi"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/text_size_medium"
+                        android:background="@drawable/bg_point_in_detail_trip"
+                        android:padding="@dimen/size_8"
+                        android:gravity="center"/>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1.5dp"
+                        android:layout_weight="1"
+                        android:background="@color/green_dark"/>
+
+                    <TextView
+                        android:id="@+id/tv_end_point"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/text_size_medium"
+                        android:text="Ha Noi"
+                        android:background="@drawable/bg_point_in_detail_trip"
+                        android:padding="@dimen/size_8"
+                        android:gravity="center"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_start_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/ll_point"
+                    android:padding="@dimen/size_4"
+                    android:text="@string/trip_date_start"/>
+
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rcv_detail_day_plan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rlt_point"
+                android:layout_marginTop="0dp"/>
+
+        </RelativeLayout>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:visibility="gone"
+        android:id="@+id/fab_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/size_16"
+        android:layout_gravity="bottom|right"
+        android:src="@drawable/ic_add_white"
+        app:backgroundTint="@color/green_500"
+        app:fabSize="normal"/>
+
+</android.support.design.widget.CoordinatorLayout>

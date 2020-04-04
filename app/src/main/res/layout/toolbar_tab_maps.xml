@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rlt_toolbar_map"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_transparent"
+    android:paddingLeft="@dimen/size_6"
+    android:paddingRight="@dimen/size_6"
+    android:paddingTop="@dimen/size_6">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_toolbar_map"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/colorWhite"
+        app:cardCornerRadius="@dimen/size_6"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:id="@+id/rlt_controls_toolbar_map"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="left"
+                android:padding="@dimen/size_12"
+                android:src="@drawable/ic_drawer" />
+
+
+            <EditText
+                android:id="@+id/edt_search"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_alignTop="@+id/img_left"
+                android:layout_alignBottom="@+id/img_left"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/btn_clear"
+                android:layout_toRightOf="@+id/img_left"
+                android:background="@color/color_transparent"
+                android:hint="@string/text_search_here"
+                android:inputType="text"
+                android:imeOptions="actionSearch"
+                android:paddingLeft="@dimen/size_16"
+                android:paddingTop="@dimen/size_8"
+                android:paddingBottom="@dimen/size_8"
+                android:maxLines="1"
+                android:focusable="false"/>
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/btn_clear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/size_12"
+                app:srcCompat="@drawable/ic_clear_black"
+                android:layout_toLeftOf="@+id/img_right"
+                android:layout_alignParentRight="true"/>
+
+            <ProgressBar
+                android:layout_centerHorizontal="true"
+                android:visibility="gone"
+                android:paddingLeft="@dimen/size_8"
+                android:paddingTop="@dimen/size_8"
+                android:paddingBottom="@dimen/size_8"
+                android:id="@+id/progress_bar_search"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_alignTop="@+id/img_right"
+                android:layout_alignBottom="@+id/img_right"
+                android:indeterminateDrawable="@drawable/progress_search"
+                android:layout_toLeftOf="@+id/img_right"/>
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/img_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:padding="@dimen/size_12"
+                android:src="@drawable/ic_search_voice" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

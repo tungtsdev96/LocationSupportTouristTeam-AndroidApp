@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="@dimen/size_16"
+    android:layout_marginLeft="@dimen/size_12"
+    android:layout_marginRight="@dimen/size_12"
+    android:paddingBottom="@dimen/size_8"
+    android:background="@color/colorWhite">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/card_place"
+        app:cardCornerRadius="@dimen/size_8"
+        app:cardUseCompatPadding="false">
+
+        <ImageView
+            android:id="@+id/img_place"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_image_trip_big"
+            android:scaleType="centerCrop"/>
+
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/tv_name_place"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/card_place"
+        android:paddingTop="@dimen/size_8"
+        android:maxLines="2"
+        android:textSize="@dimen/text_size_medium"
+        android:text="Tungts"
+        android:textColor="@color/colorBlack"/>
+
+    <LinearLayout
+        android:id="@+id/ll_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_below="@id/tv_name_place">
+
+        <com.svmc.android.locationsupportteam.ui.customviews.CustomRatingView
+            android:id="@+id/rating_score"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/size_24"
+            app:score="4.0"
+            android:gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/tv_number_reviewed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/rating_score"
+            android:layout_alignBottom="@+id/rating_score"
+            android:layout_alignTop="@id/rating_score"
+            android:text=" - 3 reviews"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

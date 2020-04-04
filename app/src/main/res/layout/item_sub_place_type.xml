@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/tv_sub_plae_type"
+    android:text="Nha hang"
+    android:paddingLeft="@dimen/size_60"
+    android:paddingTop="@dimen/size_16"
+    android:paddingBottom="@dimen/size_16"
+    android:textColor="@color/colorBlack"
+    android:clickable="true"
+    android:background="?attr/selectableItemBackground"/>

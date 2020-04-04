@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar_tab_maps"/>
+
+    <com.svmc.android.locationsupportteam.ui.customviews.WrapContentViewPager
+        android:id="@+id/view_pager_places"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_transparent"
+        android:layout_gravity="bottom"
+        android:paddingLeft="24dp"
+        android:paddingRight="12dp"
+        android:layout_weight="1"/>
+
+</android.support.design.widget.CoordinatorLayout>

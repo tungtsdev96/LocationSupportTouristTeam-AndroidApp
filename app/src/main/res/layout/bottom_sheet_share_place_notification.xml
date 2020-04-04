@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_show_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:background="?attr/selectableItemBackground"
+        android:text="@string/detail_place"
+        android:drawableLeft="@drawable/ic_detail_place_black"
+        android:padding="@dimen/size_12"
+        android:drawablePadding="@dimen/size_8"
+        android:gravity="center_vertical"
+        android:textColor="@color/colorBlack" />
+
+    <include layout="@layout/divider"/>
+
+    <TextView
+        android:id="@+id/image_attach"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:background="?attr/selectableItemBackground"
+        android:text="Xem ảnh được gửi"
+        android:drawableLeft="@drawable/ic_image_attach"
+        android:padding="@dimen/size_12"
+        android:drawablePadding="@dimen/size_8"
+        android:gravity="center_vertical"
+        android:textColor="@color/colorBlack" />
+
+    <include layout="@layout/divider"/>
+
+    <TextView
+        android:clickable="true"
+        android:background="?attr/selectableItemBackground"
+        android:id="@+id/tv_show_on_room"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/show_on_room"
+        android:drawableLeft="@drawable/ic_map_black"
+        android:padding="@dimen/size_12"
+        android:drawablePadding="@dimen/size_8"
+        android:gravity="center_vertical"
+        android:textColor="@color/colorBlack"/>
+
+    <include layout="@layout/divider"/>
+
+    <TextView
+        android:clickable="true"
+        android:background="?attr/selectableItemBackground"
+        android:id="@+id/tv_delete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/delete"
+        android:drawableLeft="@drawable/ic_delete_black"
+        android:padding="@dimen/size_12"
+        android:drawablePadding="@dimen/size_8"
+        android:gravity="center_vertical"
+        android:textColor="@color/colorBlack"/>
+
+</LinearLayout>

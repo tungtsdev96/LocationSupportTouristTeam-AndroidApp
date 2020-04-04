@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlt_message_left"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite">
+
+    <TextView
+        android:id="@+id/tv_time_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="2dp"
+        android:text="CN Lúc 15:30"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/img_avatar"
+        android:layout_width="@dimen/size_32"
+        android:layout_height="@dimen/size_32"
+        android:layout_below="@+id/tv_time_message"
+        android:layout_marginLeft="@dimen/size_10"
+        android:layout_marginRight="@dimen/size_10"
+        android:src="@drawable/ava_demo" />
+
+    <TextView
+        android:id="@+id/tv_content_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_time_message"
+        android:layout_marginRight="@dimen/size_56"
+        android:layout_toRightOf="@+id/img_avatar"
+        android:gravity="center_vertical"
+        android:padding="@dimen/size_10"
+        android:text="tungts"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/text_size_medium"
+        android:clickable="true"/>
+
+</RelativeLayout>
+
+

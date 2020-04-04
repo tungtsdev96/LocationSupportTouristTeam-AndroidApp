@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_centerHorizontal="true"
+        android:gravity="center_vertical"
+        android:id="@+id/ll_alert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/size_16"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/img_alert"
+            android:layout_width="@dimen/size_32"
+            android:layout_height="@dimen/size_32"
+            android:background="@drawable/ic_warning"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/img_close" />
+
+        <TextView
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thông báo"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/size_16" />
+
+        <TextView
+            android:id="@+id/tv_content_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_alert"
+            android:text="TungTs đang bị hết xăng"
+            android:layout_marginLeft="@dimen/size_16"
+            android:layout_marginRight="@dimen/size_16"
+            android:textSize="@dimen/text_size_title"
+            android:gravity="center"
+            android:textColor="@color/colorBlack" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/ll_controls"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/ll_alert"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/size_16"
+        android:layout_marginLeft="@dimen/size_16"
+        android:layout_marginRight="@dimen/size_16">
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_btn_green_dark"
+            android:clickable="true"
+            android:drawableLeft="@drawable/ic_call_white"
+            android:drawablePadding="@dimen/size_4"
+            android:text="@string/call"
+            android:textColor="@color/colorWhite"
+            android:gravity="center"
+            android:paddingTop="@dimen/size_8"
+            android:paddingBottom="@dimen/size_8"
+            android:paddingLeft="@dimen/size_12"
+            android:paddingRight="@dimen/size_12"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_resolve_alert"
+        android:visibility="visible"
+        android:layout_below="@id/ll_controls"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/size_16">
+
+        <TextView
+            android:layout_marginTop="@dimen/size_16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_medium"
+            android:text="Gọi đội cứu hộ"
+            android:textColor="@color/colorBlack"/>
+
+        <RelativeLayout
+            android:layout_marginTop="@dimen/size_8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:inputType="phone"
+                android:id="@+id/edt_phone"
+                android:layout_alignBottom="@+id/btn_call"
+                android:layout_alignTop="@id/btn_call"
+                android:layout_marginRight="@dimen/size_8"
+                android:layout_toLeftOf="@+id/btn_call"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_transparent"
+                android:hint="Nhập số điện thoại"
+                android:gravity="center_vertical"/>
+
+            <TextView
+                android:id="@+id/btn_call"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:padding="@dimen/size_8"
+                android:drawableLeft="@drawable/ic_call_blue" />
+
+        </RelativeLayout>
+
+        <RadioGroup
+            android:layout_marginTop="@dimen/size_16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rd_115"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Y tế: 115"/>
+
+            <RadioButton
+                android:id="@+id/rd_114"
+                android:layout_marginLeft="@dimen/size_16"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cứu hỏa: 114"/>
+
+            <RadioButton
+                android:id="@+id/rd_113"
+                android:layout_marginLeft="@dimen/size_16"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cảnh sát: 113"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/btn_solve"
+            android:layout_marginTop="@dimen/size_16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Đánh dấu sự cố đã được xử lý"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/bg_btn_primary"
+            android:paddingLeft="@dimen/size_16"
+            android:paddingRight="@dimen/size_16"
+            android:paddingTop="@dimen/size_10"
+            android:paddingBottom="@dimen/size_10"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:scaleType="fitXY"
+        android:layout_margin="@dimen/size_16"
+        android:layout_marginBottom="@dimen/size_16"
+        android:src="@drawable/test"
+        android:visibility="visible"
+        android:id="@+id/img_attach"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="180dp"
+        android:layout_below="@id/ll_resolve_alert"/>
+
+    <TextView
+        android:layout_below="@+id/img_attach"
+        android:visibility="visible"
+        android:id="@+id/tv_show_map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/size_16"
+        android:layout_marginLeft="@dimen/size_12"
+        android:layout_marginBottom="@dimen/size_16"
+        android:background="@drawable/bg_create_room_location"
+        android:clickable="true"
+        android:drawableLeft="@drawable/ic_map_white"
+        android:drawablePadding="@dimen/size_4"
+        android:gravity="center"
+        android:paddingLeft="@dimen/size_12"
+        android:paddingTop="@dimen/size_8"
+        android:paddingRight="@dimen/size_12"
+        android:paddingBottom="@dimen/size_8"
+        android:text="@string/location"
+        android:textColor="@color/colorWhite" />
+
+</RelativeLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/colorWhite">
+
+    <RelativeLayout
+        android:id="@+id/rlt_"
+        android:layout_marginTop="@dimen/size_24"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@drawable/bg_with_bottom_line">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/size_8"
+            android:src="@drawable/ic_back_black"
+            android:layout_margin="@dimen/size_8"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"/>
+
+        <ImageView
+            android:id="@+id/img_warning"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/size_8"
+            android:src="@drawable/ic_warning"
+            android:layout_margin="@dimen/size_8"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"/>
+
+        <TextView
+            android:layout_centerInParent="true"
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/size_4"
+            android:text="@string/list_member"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/text_size_big"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_search"
+        android:layout_below="@+id/rlt_"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_edt_search"
+        android:layout_marginLeft="@dimen/size_12"
+        android:layout_marginRight="@dimen/size_12"
+        android:layout_marginTop="@dimen/size_16"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/size_8"
+            android:src="@drawable/ic_search_green_dark"/>
+
+        <EditText
+            android:id="@+id/edt_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/size_4"
+            android:layout_marginRight="@dimen/size_8"
+            android:background="@color/color_transparent"
+            android:inputType="text"
+            android:maxLines="1"
+            android:hint="@string/search"
+            android:textColor="@color/colorBlack"
+            android:imeOptions="actionSearch"/>
+
+    </LinearLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_below="@id/ll_search"
+        android:layout_marginTop="@dimen/size_16"
+        android:id="@+id/swipe_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:visibility="visible"
+            android:id="@+id/rcv_members"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never"/>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <Button
+        android:id="@+id/btn_choose_map_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kiểu bản đồ"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/size_8"/>
+
+</RelativeLayout>

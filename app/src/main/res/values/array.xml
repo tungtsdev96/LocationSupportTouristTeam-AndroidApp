@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="type_places">
+        <item>Tham quan</item>
+        <item>Nhà hàng</item>
+        <item>Khách sạn</item>
+        <item>Được ưa thích</item>
+    </string-array>
+
+    <string-array name="tabs_detail_group">
+        <item>@string/post_group</item>
+        <item>@string/chat_group</item>
+        <item>@string/trip_share_in_group</item>
+        <item>@string/show_on_map_group</item>
+        <item>@string/member</item>
+    </string-array>
+
+    <string-array name="choose_image">
+        <item>Chụp ảnh</item>
+        <item>Thư viện</item>
+    </string-array>
+
+    <string-array name="map_type">
+        <item>Bình thường</item>
+        <item>Vệ tinh</item>
+        <item>Địa hình</item>
+    </string-array>
+
+</resources>

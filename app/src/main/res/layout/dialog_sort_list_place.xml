@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_32"
+        android:layout_marginRight="@dimen/size_32"
+        android:background="@drawable/bg_dialog_choose_day"
+        android:orientation="vertical">
+
+        <TextView
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/size_16"
+            android:text="@string/sort_by"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/text_size_title"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:padding="@dimen/size_16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_open_now"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/work_hour"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/text_size_medium"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:layout_marginLeft="@dimen/size_16"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/tv_open_now"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rd_open_all"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/all"/>
+
+                <RadioButton
+                    android:id="@+id/rd_open_now"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/size_8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/open_now"/>
+
+            </RadioGroup>
+
+        </RelativeLayout>
+
+        <TextView
+            android:paddingBottom="@dimen/size_8"
+            android:paddingLeft="@dimen/size_16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sort_by"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/text_size_medium"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/size_8"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rd_all"
+                android:textSize="@dimen/text_size_medium"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_48"
+                android:layout_weight="1"
+                android:padding="@dimen/size_8"
+                android:text="@string/all" />
+
+            <RadioButton
+                android:id="@+id/rd_price_ascending"
+                android:textSize="@dimen/text_size_medium"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_48"
+                android:layout_weight="1"
+                android:padding="@dimen/size_8"
+                android:text="@string/price_ascending" />
+
+            <RadioButton
+                android:id="@+id/rd_price_descending"
+                android:textSize="@dimen/text_size_medium"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_48"
+                android:layout_weight="1"
+                android:padding="@dimen/size_8"
+                android:text="@string/price_descending" />
+
+            <RadioButton
+                android:id="@+id/rd_rating_ascending"
+                android:textSize="@dimen/text_size_medium"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_48"
+                android:layout_weight="1"
+                android:padding="@dimen/size_8"
+                android:text="@string/rating_ascending" />
+
+            <RadioButton
+                android:id="@+id/rd_rating_descending"
+                android:textSize="@dimen/text_size_medium"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_48"
+                android:layout_weight="1"
+                android:padding="@dimen/size_8"
+                android:text="@string/rating_descending" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/btn_apply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/size_16"
+            android:layout_marginTop="@dimen/size_8"
+            android:background="@drawable/bg_btn_primary"
+            android:clickable="true"
+            android:paddingLeft="@dimen/size_32"
+            android:paddingTop="@dimen/size_10"
+            android:paddingRight="@dimen/size_32"
+            android:paddingBottom="@dimen/size_10"
+            android:text="@string/apply"
+            android:textColor="@color/colorWhite" />
+
+    </LinearLayout>
+
+</FrameLayout>
+

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true">
+
+    <include layout="@layout/toolbar_common"/>
+
+    <RelativeLayout
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/fr_send_message"
+            android:background="@color/colorWhite"/>
+
+        <FrameLayout
+            android:background="@color/colorWhite"
+            android:id="@+id/fr_send_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <include layout="@layout/divider"/>
+
+            <ImageView
+                android:id="@+id/img_emoji"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_emoji"
+                android:padding="@dimen/size_16"
+                android:layout_gravity="bottom"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"/>
+
+            <ImageView
+                android:layout_gravity="right|bottom"
+                android:id="@+id/img_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_image"
+                android:padding="@dimen/size_16"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"/>
+
+            <ImageView
+                android:layout_gravity="right|bottom"
+                android:visibility="gone"
+                android:id="@+id/img_send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_send_message"
+                android:padding="@dimen/size_16"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"/>
+
+            <EditText
+                android:id="@+id/edt_send_message"
+                android:layout_marginLeft="@dimen/size_56"
+                android:layout_marginRight="@dimen/size_56"
+                android:layout_gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:background="@color/color_transparent"
+                android:hint="@string/message"
+                android:textColor="@color/colorBlack"/>
+
+        </FrameLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_alignParentTop="true"
+            android:layout_above="@+id/fr_send_message"
+            android:id="@+id/rcv_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_above="@+id/fr_send_message"
+            android:layout_alignParentRight="true"
+            android:id="@+id/fab_scroll_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/size_16"
+            android:src="@drawable/ic_down"
+            android:clickable="true"
+            app:fabSize="normal"
+            app:backgroundTint="@color/colorWhite" />
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

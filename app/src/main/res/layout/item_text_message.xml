@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/tv_text"
+    android:textColor="@color/material_blue_900"
+    android:text="test"
+    android:textSize="@dimen/text_size_medium"
+    android:gravity="center"
+    android:padding="@dimen/size_12"
+    android:background="?attr/selectableItemBackground"
+    android:clickable="true"/>

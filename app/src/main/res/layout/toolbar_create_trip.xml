@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    android:background="@drawable/bg_border_toolbar_white"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    app:contentInsetLeft="0dp"
+    app:contentInsetStart="0dp"
+    app:contentInsetRight="0dp"
+    app:contentInsetEnd="0dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/size_8"
+            android:layout_margin="@dimen/size_8"
+            android:src="@drawable/ic_back_black"
+            android:background="@drawable/bg_action_back_black"
+            android:clickable="true"/>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/btn_back"
+            android:layout_toLeftOf="@id/btn_done"
+            android:gravity="center"
+            android:text="Title"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_size_title"/>
+
+        <TextView
+            android:id="@+id/btn_done"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/size_16"
+            android:layout_marginTop="@dimen/size_8"
+            android:layout_marginBottom="@dimen/size_8"
+            android:layout_marginLeft="@dimen/size_8"
+            android:paddingTop="@dimen/size_8"
+            android:paddingBottom="@dimen/size_8"
+            android:paddingLeft="@dimen/size_24"
+            android:paddingRight="@dimen/size_24"
+            android:gravity="center"
+            android:text="@string/trip_done"
+            android:textSize="@dimen/text_size_default"
+            android:textStyle="bold"
+            android:textColor="@color/text_done_create_trip"
+            android:background="@drawable/bg_btn_done_create_trip"
+            android:clickable="true"/>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.Toolbar>

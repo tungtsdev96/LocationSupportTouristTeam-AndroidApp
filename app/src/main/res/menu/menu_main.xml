@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:title="CÁ NHÂN">
+        <menu>
+            <group android:checkableBehavior="none">
+
+                <item
+                    android:id="@+id/menu_profile"
+                    android:title="@string/menu_profile"
+                    android:icon="@drawable/ic_profile"/>
+
+                <item
+                    android:id="@+id/menu_place"
+                    android:title="@string/menu_place"
+                    android:icon="@drawable/ic_save_place_gray"/>
+
+                <item
+                    android:id="@+id/menu_history_location"
+                    android:title="Lịch sử đường đi"
+                    android:icon="@drawable/ic_history_location_gray" />
+
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="NHÓM">
+        <menu>
+            <group android:checkableBehavior="none">
+
+                <item
+                    android:id="@+id/menu_notification"
+                    android:title="@string/menu_notify"
+                    android:icon="@drawable/ic_notification_gray"/>
+
+                <item
+                    android:id="@+id/menu_room_location"
+                    android:title="@string/menu_group"
+                    android:icon="@drawable/ic_group_gray" />
+
+                <item
+                    android:id="@+id/menu_post_alert"
+                    android:title="@string/post_alert"
+                    android:icon="@drawable/ic_alert_gray"/>
+
+                <item
+                    android:id="@+id/menu_turn_location"
+                    android:title="@string/menu_switch_location"
+                    android:icon="@drawable/ic_location_gray"
+                    app:actionLayout="@layout/action_view_switch"/>
+
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="HỖ TRỢ" android:visible="false">
+        <menu>
+            <group android:checkableBehavior="none">
+
+                <item
+                    android:id="@+id/menu_feed_back"
+                    android:title="@string/menu_feed_back"
+                    android:icon="@drawable/ic_feed_back_gray"/>
+
+                <item
+                    android:id="@+id/menu_share_app"
+                    android:title="@string/menu_share_app"
+                    android:icon="@drawable/ic_share_gray"/>
+
+                <item
+                    android:id="@+id/menu_rate_app"
+                    android:title="@string/menu_rate_app"
+                    android:icon="@drawable/ic_rate_app_gray" />
+
+            </group>
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/menu_setting"
+        android:icon="@drawable/ic_setting_gray"
+        android:title="Cài đặt" />
+
+    <item
+        android:id="@+id/menu_sign_out"
+        android:icon="@drawable/ic_sign_out_gray"
+        android:title="Đăng xuất" />
+
+</menu>

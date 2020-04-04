@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/size_16">
+
+    <ImageView
+        android:id="@+id/img_camera"
+        android:layout_width="@dimen/size_100"
+        android:layout_height="@dimen/size_100"
+        android:src="@drawable/ic_camera_gray"/>
+
+    <RadioGroup
+        android:layout_alignTop="@id/img_camera"
+        android:layout_alignBottom="@id/img_camera"
+        android:layout_toRightOf="@id/img_camera"
+        android:layout_marginLeft="@dimen/size_16"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <RadioButton
+            android:id="@+id/rd_current_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/curent_location"/>
+
+        <RadioButton
+            android:id="@+id/rd_point_selected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vị trí đã chọn"/>
+
+    </RadioGroup>
+
+    <EditText
+        android:padding="@dimen/size_8"
+        android:background="@color/color_transparent"
+        android:layout_below="@+id/img_camera"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/edt_message"
+        android:hint="Nhập tin nhắn"/>
+
+</RelativeLayout>

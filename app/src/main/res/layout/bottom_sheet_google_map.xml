@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout_bottom_sheet"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <View
+        android:id="@+id/shadow"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="@drawable/shape_gradient_top_shadow"
+        app:layout_anchor="@+id/bottom_sheet_toolbar_map"/>
+
+    <FrameLayout
+        android:id="@+id/bottom_sheet_toolbar_map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        app:behavior_hideable="true"
+        app:behavior_peekHeight = "@dimen/size_120"
+        app:layout_behavior="com.svmc.android.locationsupportteam.ui.customviews.behavior.LockableBottomSheetBehavior"
+        tools:ignore="MissingPrefix">
+
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/scroll_view_discover"
+            android:layout_marginTop="@dimen/size_16"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:background="@color/colorWhite"
+                    android:id="@+id/tv_name_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:layout_marginBottom="@dimen/size_16"
+                    android:text="@string/group_discover"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/text_size_title" />
+
+                <LinearLayout
+                    android:background="@color/colorWhite"
+                    android:id="@+id/ll_discover_place"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/size_8"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/ll_discover_restaurant"
+                        android:padding="@dimen/size_8"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:background="?attr/selectableItemBackground"
+                        android:clickable="true">
+
+                        <com.svmc.android.locationsupportteam.ui.customviews.CustomCircleView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:backgroundColor="@color/facebook_bg_pressed">
+
+                            <ImageView
+                                android:id="@+id/ic_restaurant"
+                                android:padding="@dimen/size_8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/ic_restaurant_white"/>
+
+                        </com.svmc.android.locationsupportteam.ui.customviews.CustomCircleView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/restaurant"
+                            android:layout_marginTop="@dimen/size_4"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_discover_hotel"
+                        android:padding="@dimen/size_8"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:background="?attr/selectableItemBackground"
+                        android:clickable="true">
+
+                        <com.svmc.android.locationsupportteam.ui.customviews.CustomCircleView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:backgroundColor="@color/red_400">
+
+                            <ImageView
+                                android:padding="@dimen/size_8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/ic_hotel_white"/>
+
+                        </com.svmc.android.locationsupportteam.ui.customviews.CustomCircleView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/hotel"
+                            android:layout_marginTop="@dimen/size_4"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_discover_attraction"
+                        android:padding="@dimen/size_8"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:background="?attr/selectableItemBackground"
+                        android:clickable="true">
+
+                        <com.svmc.android.locationsupportteam.ui.customviews.CustomCircleView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:backgroundColor="@color/orange_500">
+
+                            <ImageView
+                                android:padding="@dimen/size_8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/ic_attractions_white"/>
+
+                        </com.svmc.android.locationsupportteam.ui.customviews.CustomCircleView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/attraction"
+                            android:layout_marginTop="@dimen/size_4"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/discover_more_type_place"
+                        android:padding="@dimen/size_8"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:background="?attr/selectableItemBackground"
+                        android:clickable="true">
+
+                        <com.svmc.android.locationsupportteam.ui.customviews.CustomCircleView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:backgroundColor="@color/green">
+
+                            <ImageView
+                                android:padding="@dimen/size_8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/ic_more_place_type_white"/>
+
+                        </com.svmc.android.locationsupportteam.ui.customviews.CustomCircleView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/more"
+                            android:layout_marginTop="@dimen/size_4"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rcv_recented_search"
+                    android:layout_marginTop="@dimen/size_8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+    </FrameLayout>
+
+</android.support.design.widget.CoordinatorLayout>

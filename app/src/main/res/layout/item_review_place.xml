@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/rlt_author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_author"
+            android:layout_width="@dimen/size_32"
+            android:layout_height="@dimen/size_32"
+            android:layout_margin="@dimen/size_16"/>
+
+        <TextView
+            android:id="@+id/tv_name_author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/img_author"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            android:text="Tran Son Tung"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlt_rating"
+        android:layout_marginLeft="@dimen/size_16"
+        android:layout_below="@+id/rlt_author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.svmc.android.locationsupportteam.ui.customviews.CustomRatingView
+            android:id="@+id/rating_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            app:type="ORANGE"
+            app:score="2"/>
+
+        <TextView
+            android:id="@+id/tv_last_time_created"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/rating_score"
+            android:layout_centerVertical="true"
+            android:text="1 tuan truoc"
+            android:layout_marginLeft="@dimen/size_4"
+            android:textSize="@dimen/text_size_small"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_4"
+        android:layout_marginLeft="@dimen/size_16"
+        android:layout_marginRight="@dimen/size_16"
+        android:layout_marginBottom="@dimen/size_16"
+        android:layout_below="@id/rlt_rating"
+        android:text="asdasdasdas"
+        android:gravity="left"
+        android:textColor="@color/colorBlack"/>
+
+</RelativeLayout>

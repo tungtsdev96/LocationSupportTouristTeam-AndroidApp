@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android" android:color="@color/ripple_dark">
+
+    <item android:state_pressed="true" android:state_focused="true">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/size_4"/>
+            <solid android:color="@color/selector_teal_pressed"/>
+        </shape>
+    </item>
+
+
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/size_4"/>
+            <solid android:color="@color/material_teal_500"/>
+        </shape>
+    </item>
+
+</ripple>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:clickable="true">
+
+    <com.svmc.android.locationsupportteam.ui.customviews.CircleImageView
+        android:id="@+id/img_profile"
+        android:layout_centerVertical="true"
+        android:layout_width="@dimen/size_avatar_min"
+        android:layout_height="@dimen/size_avatar_min"
+        android:layout_marginTop="@dimen/size_8"
+        android:layout_marginBottom="@dimen/size_8"
+        android:layout_marginRight="@dimen/size_8"
+        android:layout_marginLeft="@dimen/size_10"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/size_4"
+        android:layout_toRightOf="@+id/img_profile"
+        android:layout_toLeftOf="@+id/tv_add_member">
+
+        <TextView
+            android:id="@+id/tv_display_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Son Tung"
+            android:textColor="@color/colorBlack"
+            android:maxLines="1"
+            android:textSize="@dimen/text_size_big"/>
+
+        <TextView
+            android:id="@+id/tv_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="tungts.soict@gmail.com"/>
+
+    </LinearLayout>
+
+    <CheckBox
+        android:visibility="gone"
+        android:id="@+id/chb_choose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:padding="@dimen/size_16"
+        android:layout_centerVertical="true"/>
+
+
+    <TextView
+        android:id="@+id/tv_add_member"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/size_16"
+        android:background="@drawable/bg_remove_user_room"
+        android:padding="@dimen/size_8"
+        android:textColor="@color/colorBlack"
+        android:clickable="true"/>
+
+</RelativeLayout>

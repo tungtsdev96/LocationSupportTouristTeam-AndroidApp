@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/size_8"
+    android:paddingRight="@dimen/size_8">
+
+    <LinearLayout
+        android:id="@+id/ll_present_vehicle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <View
+            android:background="@color/colorAccent"
+            android:layout_width="@dimen/size_1"
+            android:layout_height="@dimen/size_16"/>
+
+        <ImageView
+            android:id="@+id/img_vehicle"
+            android:padding="@dimen/size_8"
+            android:layout_below="@+id/v1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_car_green_dark"/>
+
+        <TextView
+            android:id="@+id/tv_time_and_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3.9 km - 12p"
+            android:textColor="@color/colorBlack"/>
+
+        <View
+            android:layout_marginTop="@dimen/size_8"
+            android:background="@color/colorAccent"
+            android:layout_width="@dimen/size_1"
+            android:layout_height="@dimen/size_16"/>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.CardView
+        android:layout_below="@+id/ll_present_vehicle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_place"
+                android:layout_width="@dimen/size_100"
+                android:layout_height="@dimen/size_100"
+                android:src="@drawable/demo_city"
+                android:scaleType="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/size_4"
+                android:layout_alignLeft="@id/img_place"
+                android:layout_alignRight="@id/img_place"
+                android:layout_alignBottom="@id/img_place"
+                android:text="15:00"
+                android:textColor="@color/colorWhite"
+                android:gravity="center"
+                android:background="@color/color_pink"/>
+
+            <ImageView
+                android:id="@+id/img_remove"
+                android:padding="@dimen/size_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_clear_gray"
+                android:layout_alignParentRight="true"
+                android:clickable="true"
+                android:background="?attr/selectableItemBackground"/>
+
+
+            <LinearLayout
+                android:layout_centerVertical="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_toRightOf="@+id/img_place"
+                android:layout_toLeftOf="@+id/img_remove">
+
+                <TextView
+                    android:id="@+id/tv_title_place"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/size_8"
+                    android:text="Ho Chi Minh"
+                    android:textColor="@color/colorBlack"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_time_visit"
+                    android:layout_marginLeft="@dimen/size_8"
+                    android:paddingRight="@dimen/size_8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true">
+
+                    <ImageView
+                        android:padding="@dimen/size_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_free_time"/>
+
+                    <TextView
+                        android:id="@+id/tv_long_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tham quan: 45p"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_add_note"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/size_8"
+                    android:paddingRight="@dimen/size_8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true">
+
+                    <ImageView
+                        android:padding="@dimen/size_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_note_green_dark"/>
+
+                    <TextView
+                        android:id="@+id/tv_note"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/trip_note"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

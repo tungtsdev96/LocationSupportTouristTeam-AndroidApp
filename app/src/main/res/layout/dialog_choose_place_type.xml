@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:layout_margin="@dimen/size_16"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="@dimen/size_4"
+        app:cardElevation="@dimen/size_4"
+        app:cardBackgroundColor="@color/colorWhite">
+
+        <RelativeLayout
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/size_16"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/text_size_big"
+                android:textStyle="bold"
+                android:text="@string/choose_place_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_des"
+                android:layout_below="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_8"
+                android:text="@string/choose_place_type_des"
+                android:textStyle="italic"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_below="@+id/tv_des"
+                android:id="@+id/rcv_place_type"
+                android:layout_width="match_parent"
+                android:layout_height="288dp"
+                android:layout_marginTop="@dimen/size_8"/>
+
+            <TextView
+                android:id="@+id/btn_done"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/rcv_place_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/size_8"
+                android:text="@string/trip_done"
+                android:textAllCaps="true"
+                android:textColor="@color/colorPrimary"
+                android:layout_gravity="right"
+                android:layout_marginTop="@dimen/size_8"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"/>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+
+</RelativeLayout>

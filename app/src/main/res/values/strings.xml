@@ -1,0 +1,181 @@
+<resources>
+    <string name="app_name">VTrack</string>
+    <string name="notification">Thông báo</string>
+
+    <!--menu main-->
+    <string name="menu_new_feed">Trang chủ</string>
+    <string name="menu_map">Bản đồ</string>
+    <string name="menu_profile">Thông tin cá nhân</string>
+    <string name="menu_notify">Thông báo</string>
+    <string name="menu_trip">Lịch trình</string>
+    <string name="menu_group">Nhóm của bạn</string>
+    <string name="menu_chat">Trò chuyện</string>
+    <string name="menu_feed_back">Phản hồi</string>
+    <string name="menu_share_app">Chia sẻ</string>
+    <string name="menu_rate_app">Rate app</string>
+    <string name="menu_switch_location">Bật chia sẻ vị trí</string>
+    <string name="menu_place">Địa điểm đã lưu</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+
+    <!--bottom navigation-->
+    <string name="text_map">Bản đồ</string>
+    <string name="text_home">Trang chủ</string>
+    <string name="text_search_here">Tìm kiếm ở đây</string>
+
+    <!--login, sign up-->
+    <string name="email">Email</string>
+    <string name="pass">Mật khẩu</string>
+    <string name="forgot_pass">Quên mật khẩu</string>
+    <string name="sign_in">Đăng nhập</string>
+    <string name="sign_up">Đăng kí</string>
+    <string name="or">Hoặc đăng nhập với</string>
+
+    <!--fragment trip-->
+    <string name="trip">Lịch trình</string>
+    <string name="create_trip">Tạo lịch trình</string>
+    <string name="my_trip">Lịch trình của bạn</string>
+    <string name="recented_trip">Đã xem gần đây</string>
+    <string name="trip_intro_title">Làm quen với lịch trình</string>
+    <string name="trip_intro_description">Chuyến đi mang đến cho bạn cách nhanh chóng, đơn giản để sắp xếp tất cả danh sách mơ ước, đề xuất và kế hoạch sắp tới về du lịch ở một nơi</string>
+    <string name="trip_start">Bắt đầu</string>
+    <string name="trip_have_no_recented_trip">Bạn không có bất cứ mục nào xem gần đây</string>
+    <string name="trip_start_point">Điểm xuất phát</string>
+    <string name="trip_end_point">Điểm đến</string>
+    <string name="trip_date_start">Ngày khởi hành</string>
+    <string name="trip_date_end">Ngày về</string>
+    <string name="see_on_map">Xem bản đồ</string>
+    <string name="trip_note">Ghi chú</string>
+    <string name="trip_add_place">Thêm địa điểm</string>
+    <string name="trip_continue">Tiếp tục</string>
+    <string name="trip_done">Xong</string>
+    <string name="trip_free_day">Bạn có một ngày nghỉ</string>
+    <string name="trip_optimal_route">Tối ưu đường đi</string>
+    <string name="search">Tìm kiếm</string>
+    <string name="search_city_province">Tìm kiếm tỉnh, thành phố</string>
+    <string name="click_to_add">Click để thêm</string>
+    <string name="add_on">Chọn ngày</string>
+    <string name="trip_show_on_map">Tìm trên bản đồ</string>
+    <string name="trip_next">Tiếp theo</string>
+    <string name="trip_choose_start_point">Chọn điểm bắt đầu</string>
+    <string name="trip_choose_end_point">Chọn điểm đến</string>
+    <string name="trip_choose_return_date">Ngày kết thúc</string>
+
+    <string name="create_by">Tạo bởi</string>
+
+    <!--group-->
+    <string name="create_group">Tạo nhóm</string>
+    <string name="create_group_description">Nhóm là nơi tập chung những nội dung phù hợp và chia sẻ với những người phù hợp. Thêm vào đó mọi người trong nhóm có thể chia sẻ thông tin vị trí của mình cho mọi người và ngược lại</string>
+    <string name="group">Nhóm</string>
+    <string name="group_manager">Quản lý</string>
+    <string name="group_discover">Khám phá</string>
+    <string name="join_group">Tham gia nhóm</string>
+    <string name="about_group">Tổng quan</string>
+    <string name="group_activity">Hoạt động gần đây</string>
+    <string name="post_group">Chia sẻ</string>
+    <string name="chat_group">Trò chuyện</string>
+    <string name="show_on_map_group">Xem vị trí trên bản đồ</string>
+    <string name="trip_share_in_group">Lịch trình</string>
+    <string name="member">Thành viên</string>
+    <string name="like">Thích</string>
+    <string name="comment">Bình luận</string>
+    <string name="opptions">Tùy chọn</string>
+    <string name="switch_on_off">Bật/Tắt</string>
+    <string name="leave_group">Rời nhóm</string>
+    <string name="curent_location">Vị trí hiện tại</string>
+    <string name="group_name">Tên nhóm</string>
+    <string name="add_member">Thêm thành viên</string>
+    <string name="privacy">Riêng tư</string>
+    <string name="public_group">Công khai</string>
+    <string name="public_group_description">Bất cứ ai cũng có thể tìm thấy và tham gia nhóm này</string>
+    <string name="private_group">Nhóm kín</string>
+    <string name="private_group_description">Không ai có thể tìm thấy nhóm này và chỉ thành viên trong nhóm mới có thể thêm những người khác</string>
+    <string name="message">Tin nhắn</string>
+    <string name="invited">Đã mời</string>
+
+    <string name="see_all">Xem tất cả</string>
+    <string name="delete">Xóa</string>
+    <string name="near_me">Gần đây</string>
+
+    <!--Bottom sheet Dicover Map Fragment-->
+    <string name="restaurant">Nhà hàng</string>
+    <string name="hotel">Khách sạn</string>
+    <string name="more">Khác</string>
+    <string name="attraction">Địa danh</string>
+
+    <!--fillter place in map-->
+    <string name="filter">Bộ lọc</string>
+    <string name="rank_by">Sắp xếp theo</string>
+    <string name="prominence">Mức độ liên quan</string>
+    <string name="distance">Khoảng cách</string>
+    <string name="rating">Xếp hạng</string>
+    <string name="any">Bất kì</string>
+    <string name="open_now">Đang mở</string>
+    <string name="work_hour">Thời gian</string>
+    <string name="apply">Áp dụng</string>
+    <string name="show_direction">Chỉ đường</string>
+    <string name="save">Lưu</string>
+    <string name="price">Giá</string>
+    <string name="free">Miễn phí</string>
+    <string name="inexpensive">Rẻ</string>
+    <string name="normal">Bình thường</string>
+    <string name="expensive">Đắt</string>
+
+    <!--edit profile fragment-->
+    <string name="display_name">Tên hiển thị</string>
+    <string name="username">Tên người dùng</string>
+    <string name="phone">Số điẹn thoại</string>
+    <string name="write_something_about_you">Viết vài điều về bạn</string>
+    <string name="choose_image">Chọn một ảnh</string>
+    <string name="search_email_or_username">Tìm kiếm tên hoặc email</string>
+
+    <!--room location-->
+    <string name="tracking_location">Theo dõi vị trí</string>
+    <string name="room_location_description_joined">Lưu ý: Bạn sẽ rời nhóm cũ nếu tạo nhóm mới hoặc tham gia vào một nhóm khác.</string>
+    <string name="room_location_description">Lưu ý: Tạo nhóm này sẽ giúp bạn và bạn bè của mình có thể nhìn thấy nhau trong một chuyến đi chơi.</string>
+    <string name="recented">Gần đây</string>
+    <string name="result_search">Kết quả tìm kiếm</string>
+    <string name="list_member">Danh sách thành viên</string>
+    <string name="share_location">Chia sẻ vị trí</string>
+    <string name="share">Chia sẻ</string>
+    <string name="add">Thêm</string>
+    <string name="cancel">Hủy</string>
+    <string name="remove_member">Xóa</string>
+    <string name="check_internet">Đã có lỗi xảy ra vui lòng kiểm tra internet</string>
+    <string name="upload">Tải lên</string>
+    <string name="notify_sos">Thông báo SOS</string>
+
+    <string name="friend_warning">Cảnh báo</string>
+
+    <string name="call_to_place">Gọi điện</string>
+    <string name="additional_infor_place">Thêm thông tin về địa điểm này</string>
+    <string name="review_post">Bài đánh giá</string>
+    <string name="alert_note">*Lưu ý: Ứng dụng sẽ tự động gửi cảnh báo bạn đang gặp nguy hiểm cho nhóm của bạn hoặc bạn có thể tự gửi tin nhắn ở dưới</string>
+    <string name="input_here">Nhập tin nhắn tại đây...</string>
+    <string name="show_on_map">Xem vị trí</string>
+    <string name="turn_on_off_vibrate">Bật/tắt rung điện thoại khi bạn bè gửi cảnh báo</string>
+    <string name="alert">Cảnh báo</string>
+    <string name="dangerous">Gặp nguy hiểm !!!</string>
+    <string name="call">Gọi</string>
+    <string name="location">Vị trí</string>
+    <string name="try_again">Thử lại</string>
+    <string name="detail_place">Chi tiết địa điểm</string>
+    <string name="show_on_room">Hiển thị trong nhóm</string>
+    <string name="sort_by">Sắp xếp theo</string>
+    <string name="ascending">Tăng dần</string>
+    <string name="descending">Giảm dần</string>
+    <string name="score_rating">Điểm đánh giá</string>
+    <string name="all">Tất cả</string>
+    <string name="price_ascending"><![CDATA[Giá: thấp --> cao]]></string>
+    <string name="price_descending"><![CDATA[Giá: cao --> thấp]]></string>
+    <string name="rating_descending"><![CDATA[Điểm: cao --> thấp]]></string>
+    <string name="rating_ascending"><![CDATA[Điểm: thấp --> cao]]></string>
+    <string name="choose_place_type">Chọn danh mục địa điểm</string>
+    <string name="choose_place_type_des">Nhấn để chọn những danh mục địa điểm bạn muốn xem</string>
+    <string name="post_alert">Cảnh báo nguy hiểm</string>
+
+    <string name="synchronize">Đồng bộ dữ liệu</string>
+    <string name="every_day"> ngày</string>
+    <string name="turn_on_off_notification">Bật/tắt nhận thông báo</string>
+
+</resources>

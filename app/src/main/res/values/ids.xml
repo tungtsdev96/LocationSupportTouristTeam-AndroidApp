@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--fab in room location-->
+    <item name="fab_invite" type="id" />
+    <item name="fab_leave" type="id" />
+    <item name="fab_show_on_map" type="id" />
+
+</resources>

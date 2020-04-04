@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:visibility="visible"
+        android:id="@+id/card_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/size_16"
+        app:cardCornerRadius="@dimen/size_4"
+        app:cardBackgroundColor="@color/colorWhite"
+        app:cardElevation="@dimen/size_8"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/size_16">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <com.svmc.android.locationsupportteam.ui.customviews.CircleImageView
+                    android:id="@+id/img_room"
+                    android:layout_width="@dimen/size_56"
+                    android:layout_height="@dimen/size_56" />
+
+                <LinearLayout
+                    android:layout_marginLeft="@dimen/size_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_name_room_location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="----------------"
+                        android:textSize="@dimen/text_size_title"
+                        android:textColor="@color/colorBlack"/>
+
+                    <TextView
+                        android:visibility="gone"
+                        android:id="@+id/tv_total_member"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="----------------"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_description_room_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_16"
+                android:textStyle="italic"
+                android:text="@string/room_location_description_joined"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/size_8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/btn_leave_room_location"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/size_12"
+                    android:background="@drawable/bg_leave_group"
+                    android:clickable="true"
+                    android:textColor="@color/colorWhite"
+                    android:text="@string/leave_group"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/btn_create_room_location"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_marginLeft="@dimen/size_8"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/size_12"
+                    android:background="@drawable/bg_create_room_location"
+                    android:clickable="true"
+                    android:textColor="@color/colorWhite"
+                    android:text="@string/create_group"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_show_location_on_map"
+                android:layout_marginTop="@dimen/size_8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_show_on_location"
+                android:clickable="true"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_show_location_white"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/size_12"
+                    android:textColor="@color/colorWhite"
+                    android:text="@string/show_on_map_group"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/progress_room_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:indeterminateDrawable="@drawable/progress_search"/>
+
+</FrameLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/tabs_home"
+        android:title="@string/text_home"
+        android:enabled="true"
+        android:icon="@drawable/navigation_new_feed_selected"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/tabs_map"
+        android:title="@string/text_map"
+        android:enabled="true"
+        android:icon="@drawable/navigation_maps_selected"
+        app:showAsAction="ifRoom"/>
+
+</menu>

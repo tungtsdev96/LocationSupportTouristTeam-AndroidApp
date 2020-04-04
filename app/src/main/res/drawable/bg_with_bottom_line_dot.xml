@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:top="-5dp" android:left="-5dp" android:right="-5dp">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/card_radius_height"/>
+            <solid android:color="@color/colorWhite"/>
+            <stroke
+                android:color="@color/colorGray"
+                android:width="1dp"
+                android:dashWidth="10px"
+                android:dashGap="10px"/>
+        </shape>
+    </item>
+
+</layer-list>

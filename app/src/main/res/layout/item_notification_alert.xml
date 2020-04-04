@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/size_16"
+    android:orientation="vertical"
+    android:background="?attr/selectableItemBackground"
+    android:clickable="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_content_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/text_size_medium"
+                android:text="Hai Linh dang gap nguy hiem !!!"/>
+
+            <TextView
+                android:text="5 phut truc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_last_time_created"/>
+
+            <TextView
+                android:layout_marginTop="@dimen/size_8"
+                android:visibility="visible"
+                android:id="@+id/tv_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_btn_primary"
+                android:paddingLeft="@dimen/size_8"
+                android:paddingRight="@dimen/size_8"
+                android:paddingTop="@dimen/size_4"
+                android:paddingBottom="@dimen/size_4"
+                android:text="Đã giải quyết"
+                android:textColor="@color/colorWhite" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:clickable="true"
+            android:background="?attr/selectableItemBackground"
+            android:id="@+id/img_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_more_black"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/size_4"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/img_point"
+        android:scaleType="center"
+        android:layout_marginTop="@dimen/size_16"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:src="@drawable/demo"/>
+
+</LinearLayout>
