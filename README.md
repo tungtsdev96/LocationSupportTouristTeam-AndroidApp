@@ -84,6 +84,17 @@ You need to clone and run this [backend project](https://github.com/tungtsdev96/
    </a>
 </div>
 
+- See all notifications
+
+<div align="center">
+   <a href="https://www.youtube.com/embed/1EfWl4sSy9g">
+      <img 
+        src="https://img.youtube.com/vi/1EfWl4sSy9g/0.jpg" 
+        alt="See all notifications." 
+        style="width:100%;">
+   </a>
+</div>
+
 ## Language, libraries and tools
 - [Java](https://developer.android.com/guide) the project is 100% written in Java.
 - [Retrofit](https://square.github.io/retrofit/) A type-safe HTTP client for Android.
